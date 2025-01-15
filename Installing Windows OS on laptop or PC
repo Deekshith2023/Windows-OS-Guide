@@ -1,3 +1,69 @@
+Complete Guide: Loading Windows OS into a Pendrive and Troubleshooting tips
+
+Requirements
+1. USB Pendrive:
+* At least 8 GB storage capacity (16 GB recommended with USB 3.0).
+* Backup any data on the drive; it will be formatted (cleared).
+2. Windows ISO File:
+* Download the official Windows ISO from https://www.microsoft.com/en-us/software-download/windows11 or your desired version.
+3. Tool for Creating Bootable Media:
+* Recommended: Rufus (Windows) or UNetbootin (Linux/Mac).
+
+Step 1: Download the Windows ISO File
+1. Visit the  https://www.microsoft.com/en-us/software-download/windows11   
+2. Select your desired version (e.g., Windows 10 or 11).
+3. Follow these steps:
+Click Download tool now.
+Use the tool to create the ISO file.
+Save the ISO file to your computer.
+
+Step 2: Install Rufus
+For Windows Users:
+1. Download Rufus from https://rufus.ie/en/
+2. Install and launch Rufus.
+
+Step 3: Connect Your Pendrive
+Insert the USB drive into your PC.
+1. Ensure the system detects the drive
+* On Windows: Open File Explorer and check for the USB drive. If the USB is Ex Fat file format change that into NTFS format.
+* On Linux/Mac: Run lsblk in the terminal to verify the USB is mounted.
+
+Step 4: Create Bootable Media
+Using Rufus (Windows)
+1. Open Rufus.
+2. Select your USB drive under Device.
+3. In the Boot selection dropdown:
+* Click Select and choose the Windows ISO file.
+4. Configure the options:
+   Check your laptop for MBR or GPT by going to start > Computer managment > Disk managment under Storage > Right click on Disk 0 > properties > volumes > check for Partition style
+if it is in MBR or GPT select that type in RUFUS for Windows OS.
+* Partition scheme: GPT (for UEFI) or MBR (for Legacy BIOS).
+* File system: NTFS.
+5. Click Start.
+6. Confirm formatting the USB drive.
+7. Wait for the process to complete.
+
+Step 5: Test the Bootable USB
+1. Restart your computer and enter the BIOS/UEFI settings:
+* Common keys: F2, F12, DEL, or ESC.
+2. Set the USB drive as the first boot device.
+3. Save and exit BIOS/UEFI.
+4. The system should boot into the Windows installation setup.
+
+Troubleshooting Tips
+1. USB Not Detected:
+* Ensure the pendrive is properly inserted.
+* Try another USB port or drive.
+
+2. Error During ISO Writing:
+* Verify the integrity of the ISO file.
+* Reformat the USB and try again.
+
+3. System Doesn’t Boot from USB:
+* Check BIOS/UEFI boot order settings.
+* Ensure Secure Boot is disabled if required.
+
+
 Complete Guide: Installing Windows OS from a Pendrive to a PC/Laptop
 
 Step 1: Boot from the USB Drive
