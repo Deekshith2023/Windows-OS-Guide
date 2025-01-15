@@ -1,4 +1,4 @@
-Complete Guide: Loading Windows OS into a Pendrive
+Complete Guide: Loading Windows OS into a Pendrive and Troubleshooting tips
 
 Requirements
 1. USB Pendrive:
@@ -49,6 +49,20 @@ Step 5: Test the Bootable USB
 2. Set the USB drive as the first boot device.
 3. Save and exit BIOS/UEFI.
 4. The system should boot into the Windows installation setup.
+
+Troubleshooting Tips
+1. USB Not Detected:
+* Ensure the pendrive is properly inserted.
+* Try another USB port or drive.
+
+2. Error During ISO Writing:
+* Verify the integrity of the ISO file.
+* Reformat the USB and try again.
+
+3. System Doesn’t Boot from USB:
+* Check BIOS/UEFI boot order settings.
+* Ensure Secure Boot is disabled if required.
+
 
 
 
