@@ -43,5 +43,12 @@ if it is in MBR or GPT select that type in RUFUS for Windows OS.
 6. Confirm formatting the USB drive.
 7. Wait for the process to complete.
 
+Step 5: Test the Bootable USB
+1. Restart your computer and enter the BIOS/UEFI settings:
+* Common keys: F2, F12, DEL, or ESC.
+2. Set the USB drive as the first boot device.
+3. Save and exit BIOS/UEFI.
+4. The system should boot into the Windows installation setup.
+
 
 
