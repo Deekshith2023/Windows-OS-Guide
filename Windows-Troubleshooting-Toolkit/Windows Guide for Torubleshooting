@@ -1,0 +1,29 @@
+In this you can find most common windows Errors u you will come across and solutions.
+
+1. Problem : Issue in main.exe file 
+   Solution : OPTION 1: Open CMD in admin mode and type sfc /scannow (it will scan your computer for any type of Corrupted files ) let the scan complete till 100% after this execute the commands one by one on the same window "dism /online /clean-image /scanhealth" " dism /online /clean-image /checkhealth" "dism /online /clean-image /restorehealth"
+              OPTION 2: open run command WIN + R and type rstrui (system restore windows) chose next and select most recent event click next and click finish That's it. 
+
+2. Problem : Hard disk not being Detected in File Explorer when you insert a hard drive 
+   Solution : Option 1: check whether the cable is correctly plugged in to hardrive port.
+              Option 2: Check for the dust in the port/ hardrive while plugging into it and clean it and then insert it.
+
+3. Problem : Operating System gets corrupted frequently without any bad changes done by you
+   Solution : Option 1 : check for the hard drive health by downloading software https://www.hdsentinel.com/, if it is less than 70% then there is a chances of software getting corrupted
+                         and make sure you have backed up your data to external hard disk.
+              Option 2 : Make sure your C Drive is not full (red colour will pop up if it is almost full), if it is full then remove unwanted data or transfer that data to anothe drive in File explorer.
+              Option 3 : If you downloaded any software for free from internet make sure it is not Virus/malware/trojans which will make you laptp/pc so slow. Remove
+                        Unwanted/unused Software.
+              Option 4 : If your using Hard disk not SSD (solid state drive) then upgrade your laptop to SSD just at least for C drive which will make your laptop faster 
+                         and quicker it should be ( dont expect it to be too fast as it will only match the speed to which it should perform).
+              Option 5 : If anything is not working from above then re-install Windows Operating System from scratch (refer Windows installing Guide for it).
+
+4. Problem : Wifi not getting Connected.
+  Solution : Option 1: check for the Wifi Driver by going to computer managment > Device managment > right  click under network adaptors > search automatically update 
+                      online.
+             Option 2: even after updating it is not working then, manually download wifi driver from the offical laptop manufacturer website and install and restart the 
+                       PC/laptop.
+             Option 3: Check for the Windows OS update and update to latest version 
+             Option 4 : If anything above is not working then check in hardware level whether Wifi Physical card, change the original card / you can add extra Wifi adaptor.
+
+5. Problem : 
