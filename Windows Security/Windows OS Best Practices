@@ -1,0 +1,52 @@
+1. Enable Windows Defender Antivirus and Anti-Malware Protection
+* Action: Make sure Windows Defender is enabled to protect against viruses, malware, and other threats.
+* How:
+Open Settings → Update & Security → Windows Security.
+Click on Virus & Threat Protection.
+Ensure that Virus & Threat Protection settings are turned on.
+Enable Cloud-delivered protection and Automatic sample submission for more effective detection of threats.
+
+2. Enable Windows Firewall
+* Action: The Windows Firewall should be enabled to block unauthorized access to your computer.
+* How:
+Open Control Panel → System and Security → Windows Defender Firewall.
+Click on Turn Windows Defender Firewall on or off.
+Ensure that the firewall is enabled for both Private and Public networks.
+
+3. Enable Automatic Updates
+* Action: Ensure your system receives the latest security patches and updates automatically.
+* How:
+Open Settings → Update & Security → Windows Update.
+Click on Advanced options and ensure Automatic (recommended) is selected.
+Enable Receive updates for other Microsoft products to keep all software up to date.
+
+4. Use Strong Passwords and Enable Password Complexity
+* Action: Use complex passwords for all user accounts to prevent unauthorized access.
+* How:
+Open Control Panel → User Accounts → Change account type.
+Set strong passwords that include a mix of upper and lowercase letters, numbers, and special characters.
+Enforce password complexity by enabling Local Group Policy Editor:
+Press Win + R, type gpedit.msc, and hit Enter.
+Navigate to Computer Configuration → Windows Settings → Security Settings → Account Policies → Password Policy.
+Enable Password must meet complexity requirements.
+
+5. Enable BitLocker Drive Encryption
+* Action: Use BitLocker to encrypt your hard drive and protect sensitive data from unauthorized access.
+* How:
+Open Control Panel → System and Security → BitLocker Drive Encryption.
+Turn on BitLocker for your system drive (usually C:).
+Follow the steps to set up a recovery key and encryption options.
+
+6. Use Two-Factor Authentication (2FA)
+* Action: Enable 2FA for online accounts and services to add an additional layer of protection.
+* How:
+Enable Microsoft Authenticator or a third-party 2FA app on your Microsoft account.
+Use Windows Hello for biometric authentication (facial recognition, fingerprint) to log in securely.
+
+7. Enable Secure Boot
+* Action: Secure Boot helps protect against rootkits and bootkits by ensuring that only trusted operating systems and bootloaders can run on your machine.
+* How:
+Restart the computer and enter the BIOS/UEFI settings by pressing the appropriate key (usually F2, Del, or Esc).
+Navigate to the Boot tab and ensure Secure Boot is enabled.
+Save and exit the BIOS.
+
