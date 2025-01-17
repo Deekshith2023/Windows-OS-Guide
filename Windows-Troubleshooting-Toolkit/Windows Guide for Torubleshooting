@@ -26,4 +26,45 @@ In this you can find most common windows Errors u you will come across and solut
              Option 3: Check for the Windows OS update and update to latest version 
              Option 4 : If anything above is not working then check in hardware level whether Wifi Physical card, change the original card / you can add extra Wifi adaptor.
 
-5. Problem : 
+5. Problem : No Internet or Network Issues (Corrupted network adapter or DNS issues)
+             Option 1 : Open Command Prompt as Administrator > netsh winsock reset
+                                                               netsh int ip reset
+                                                               ipconfig /release
+                                                               ipconfig /renew
+                                                               ipconfig /flushdns
+             Option 2 : Test with alternate DNS by Opening Control Panel > Network and Sharing Center > Change adapter settings
+                        > Right-click your network > Properties > IPv4 > Use Google DNS: 8.8.8.8 and 8.8.4.4.
+
+6. Problem : Application Crashes or Not Responding (Corrupted app files or insufficient system resources).
+             Option 1: Uninstall from Control Panel > Programs > Uninstall, Reinstall the latest version.
+             Option 2 : Update Windows by locating Go to Settings > Update & Security > Windows Update, check and install updates.
+             option 3 :  Check Event Viewer for errors Press Win + R, type eventvwr, and hit Enter, Check logs under Windows Logs > Application.
+
+7. problem : Windows Update Errors
+             Option 1 : Run Windows Update Troubleshooter Go to Settings > Update & Security > Troubleshoot, Select Windows Update and run the troubleshooter.
+             Option 2 : Manually reset Windows Update components,  Open Command Prompt as Administrator.
+                                                                   Stop services:  net stop wuauserv
+                                                                                   net stop bits
+                                                                   Delete update cache:   del C:\Windows\SoftwareDistribution\* /s /q
+                                                                                          del C:\Windows\System32\catroot2\* /s /q
+                                                                    Restart services:  net start wuauserv
+                                                                                       net start bits
+              Option 3 : Download updates manually first Note the update code (e.g., KB123456) > Search and download it from the Microsoft Update Catalog.
+
+8. Problem : Black Screen After Login (Corrupted graphics driver or system files)
+             Option 1: Boot into Safe Mode and update drivers Hold Shift + Restart > Troubleshoot > Advanced Options > Startup Settings and Update the display driver in Device Manager.
+             Option 2: Restart Windows Explorer Press Ctrl + Shift + Esc to open Task Manager and Find and restart explorer.exe.
+             Option 3: Perform a System Restore Boot into Safe Mode > Go to Control Panel > Recovery > Open System Restore, Select a restore point and proceed.
+
+
+
+
+
+
+
+
+
+
+
+
+
